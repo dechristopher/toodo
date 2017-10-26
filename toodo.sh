@@ -84,9 +84,12 @@ while true; do
 		fi
 	done > .todos;
 
-	# Clear scrollback and render
+	# Clear scrollback
 	printf "\033c";
+	# Render TODOs and FIXMEs
 	cat .todos && rm .todos;
+
+	# Repeat in five seconds
 	sleep 5;
 done;
 
