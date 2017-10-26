@@ -16,7 +16,8 @@
 # Usage: td
 # Usage: td <dir> <file extension>
 #
-# td . *.go (searches local directory in .go files) 
+# td . *.go (searches local directory in .go files)
+
 # Check for install command
 if [ -n "$1" ] && [ "$1" == "install" ]; then
 	printf "[$GOLD TOODO $RESTORE] Installing..."
@@ -71,7 +72,6 @@ while true; do
 			printf "\n[ \e[1m\e[32m$file\e[0m\e[39m ]\n"
 			echo "$todoresults" | tr -d '\011' | awk '{print $NF}' FS=/
 			echo "$fixmeresults" | tr -d '\011' | awk '{print $NF}' FS=/
-			
 		fi
 	done > .todos;
 
@@ -80,3 +80,4 @@ while true; do
 	cat .todos && rm .todos;
 	sleep 5;
 done;
+
