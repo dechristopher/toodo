@@ -86,6 +86,11 @@ while true; do
 
 	# Clear scrollback
 	printf "\033c";
+
+	# Render header bar
+	#echo -en $header
+	header
+
 	# Render TODOs and FIXMEs
 	cat .todos && rm .todos;
 
