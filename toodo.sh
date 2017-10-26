@@ -31,7 +31,7 @@ if [ -z "$TYPES" ]; then
 fi
 
 # Set the window title
-echo -n -e "\033]0;todo\007"
+echo -n -e "\033]0;toodo\007"
 
 # Process files
 while true; do
