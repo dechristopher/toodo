@@ -1,13 +1,13 @@
 #! /bin/bash
 #
 # TOODO
-#   __________  ____  ____  ____ 
+#   __________  ____  ____  ____
 #  /_  __/ __ \/ __ \/ __ \/ __ \
 #   / / / / / / / / / / / / / / /
-#  / / / /_/ / /_/ / /_/ / /_/ / 
-# /_/  \____/\____/_____/\____/  
+#  / / / /_/ / /_/ / /_/ / /_/ /
+# /_/  \____/\____/_____/\____/
 #
-# Given the current working directory, find all of the files of the  
+# Given the current working directory, find all of the files of the
 # type given and search for TODO and FIXME comments in them and return
 # a nicely formatted list of those items.
 #
