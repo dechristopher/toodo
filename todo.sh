@@ -3,8 +3,10 @@
 # type given and search for TODO and FIXME comments in them and return
 # a nicely formatted list of those items.
 #
-# Usage: todo
-# Usage: todo <dir> '*.go' 
+# Usage: td
+# Usage: td <dir> <file extension>
+#
+# td . *.go (searches local directory in .go files) 
 
 # Set directory to search [ASSUMES .]
 DIR=$1
