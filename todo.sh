@@ -1,7 +1,7 @@
 #! /bin/bash
 # Given the current working directory, find all of the files of the  
-# type given and search for TODO comments in them and return a list
-# of these items.
+# type given and search for TODO and FIXME comments in them and return
+# a nicely formatted list of those items.
 #
 # Usage: todo
 # Usage: todo <dir> '*.go' 
