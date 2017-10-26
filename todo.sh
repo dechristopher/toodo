@@ -9,7 +9,7 @@
 # Set directory to search [ASSUMES .]
 DIR=$1
 if [ -z "$DIR" ]; then
-    DIR="."
+    DIR='.'
 fi
 
 # Set filetypes [ASSUMES *.go]
