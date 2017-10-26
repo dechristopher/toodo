@@ -17,6 +17,13 @@
 # Usage: td <dir> <file extension>
 #
 # td . *.go (searches local directory in .go files) 
+# Check for install command
+if [ -n "$1" ] && [ "$1" == "install" ]; then
+	printf "[$GOLD TOODO $RESTORE] Installing..."
+	sudo cp ./toodo.sh /usr/local/bin/td
+	printf "$GREEN Success!$RESTORE\n"
+	exit 0
+fi
 
 # Set directory to search [ASSUMES .]
 DIR=$1
