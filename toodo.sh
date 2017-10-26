@@ -11,6 +11,8 @@
 # type given and search for TODO and FIXME comments in them and return
 # a nicely formatted list of those items.
 #
+# Install: ./toodo.sh install
+#
 # Usage: td
 # Usage: td <dir> <file extension>
 #
