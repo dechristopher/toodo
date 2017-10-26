@@ -40,6 +40,28 @@ fi
 # Set the window title
 echo -n -e "\033]0;toodo\007"
 
+# Set header bar function
+header ()
+{
+	printf '%-284s' "$GRAYBG$BLACK  TODO v0.1$NORMAL"
+	printf "$NORMBG\n"
+}
+
+# Set header bar
+#header="$GRAYBG"
+#header="$header$BLACK  TOODO v0.1$NORMAL"
+#for i in $(seq 12 $COLUMNS)
+#for ((i=7;i<=136;i+=1))
+#do
+#	header="$header "
+#done
+# Return to normal background
+#header="$header$NORMBG\n"
+
+# DEBUG
+# header
+# exit 0
+
 # Process files
 while true; do
 	find "$DIR" -name "$TYPES" -type f | while read file; do
