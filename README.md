@@ -15,3 +15,8 @@ td /var/www *.php
 td ~/git
 ```
 
+TODO:
+
+- FIXME comment parsing and listing
+- Rewrite in go?
+- Install subroutine built in
