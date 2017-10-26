@@ -18,6 +18,15 @@
 #
 # td . *.go (searches local directory in .go files)
 
+# Set up colors
+RESTORE="$(echo -en '\033[0m')"
+BLACK="$(echo -en '\033[30m')"
+NORMAL="$(echo -en '\033[39m')"
+GOLD="$(echo -en '\033[00;33m')"
+GREEN="$(echo -en '\033[00;32m')"
+GRAYBG="$(echo -en '\033[00;47m')"
+NORMBG="$(echo -en '\033[00;49m')"
+
 # Check for install command
 if [ -n "$1" ] && [ "$1" == "install" ]; then
 	printf "[$GOLD TOODO $RESTORE] Installing..."
