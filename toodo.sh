@@ -51,9 +51,16 @@ fi
 echo -n -e "\033]0;toodo\007"
 
 # Set header bar function
+# FIXME: This is absolutely gross and it needs to be better
+
 header ()
 {
-	printf '%-284s' "$GRAYBG$BLACK  TODO v0.1$NORMAL"
+	cols=$(tput cols)
+	cols=$((cols+18))
+	fmt='%-'
+	fmt+=$cols
+	fmt+='s'
+	printf $fmt "$GRAYBG$BLACK  TOODO v0.1$NORMAL"
 	printf "$NORMBG\n"
 }
 
