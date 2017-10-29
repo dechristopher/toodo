@@ -82,12 +82,13 @@ header ()
 # Process files
 while true; do
 	find "$DIR" -name "$TYPES" -type f | while read file; do
-		todoresults=$(grep -i 'TODO' "$file");
-        	fixmeresults=$(grep -i 'FIXME' "$file");
+		todoresults=$(grep -e '#TODO' -e '# TODO' -e '//TODO' -e '// TODO' "$file");
+        fixmeresults=$(grep -e '#FIXME' -e '# FIXME' -e '//FIXME' -e '// FIXME' "$file");
 		if [ -n "$todoresults" ]; then
+			# TODO: Make this easier to read, use the color codes
 			printf "\n[ \e[1m\e[32m$file\e[0m\e[39m ]\n"
-			echo "$todoresults" | tr -d '\011' | awk '{print $NF}' FS=/
-			echo "$fixmeresults" | tr -d '\011' | awk '{print $NF}' FS=/
+			echo "$todoresults" | tr -d '\011' | awk '{print $NF}' FS=/ | awk '{print $NF}' FS=#
+			echo "$fixmeresults" | tr -d '\011' | awk '{print $NF}' FS=/ | awk '{print $NF}' FS=#
 		fi
 	done > .todos;
 
