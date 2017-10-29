@@ -35,13 +35,13 @@ if [ -n "$1" ] && [ "$1" == "install" ]; then
 	exit 0
 fi
 
-# Set directory to search [ASSUMES .]
+# Set directory to search [ASSUMES '.']
 DIR=$1
 if [ -z "$DIR" ]; then
 	DIR='.'
 fi
 
-# Set filetypes [ASSUMES *.go]
+# Set filetypes [ASSUMES '*.go']
 TYPES=$2
 if [ -z "$TYPES" ]; then
 	TYPES='*.go'
