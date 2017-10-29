@@ -96,7 +96,7 @@ while true; do
 	printf "\033c";
 
 	# Render header bar
-	#echo -en $header
+	#echo -en $headerLine
 	header
 
 	# Render TODOs and FIXMEs
