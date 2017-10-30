@@ -62,10 +62,6 @@ header ()
 	printf "$NORMBG\n"
 }
 
-# DEBUG
-# header
-# exit 0
-
 # Process files
 while true; do
 	find "$DIR" -name "$TYPES" -type f | while read file; do
@@ -83,7 +79,6 @@ while true; do
 	printf "\033c";
 
 	# Render header bar
-	#echo -en $headerLine
 	header
 
 	# Render TODOs and FIXMEs
