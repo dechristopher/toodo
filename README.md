@@ -2,13 +2,14 @@
 
 A console utility for displaying an organized list of TODO and FIXME comments in a working directory.
 
-```
-Install: ./toodo.sh install
+```bash
+Install: git clone https://github.com/dechristopher/toodo && ./toodo/toodo.sh install
+ - Drops script to /usr/local/bin/td
 
 Usage: td <directory> <file extension regex>
 Directory defaults to durrent directory and extension defaults to .go files
 
-Examples: 
+Examples:
 
 td . *.go
 td /var/www *.php
