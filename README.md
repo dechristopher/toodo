@@ -18,6 +18,5 @@ td ~/git
 
 TODO:
 
-- FIXME comment parsing and listing
+- Improve argument parsing
 - Rewrite in go?
-- Install subroutine built in
