@@ -51,8 +51,6 @@ fi
 echo -n -e "\033]0;toodo\007"
 
 # Set header bar function
-# FIXME: This is absolutely gross and it needs to be better
-
 header ()
 {
 	cols=$(tput cols)
@@ -63,17 +61,6 @@ header ()
 	printf $fmt "$GRAYBG$BLACK  TOODO v0.1$NORMAL"
 	printf "$NORMBG\n"
 }
-
-# Set header bar
-#header="$GRAYBG"
-#header="$header$BLACK  TOODO v0.1$NORMAL"
-#for i in $(seq 12 $COLUMNS)
-#for ((i=7;i<=136;i+=1))
-#do
-#	header="$header "
-#done
-# Return to normal background
-#header="$header$NORMBG\n"
 
 # DEBUG
 # header
