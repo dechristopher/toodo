@@ -7,6 +7,8 @@
 #  / / / /_/ / /_/ / /_/ / /_/ /
 # /_/  \____/\____/_____/\____/
 #
+# Created by Andrew DeChristopher
+#
 # Given the current working directory, find all of the files of the
 # type given and search for TODO and FIXME comments in them and return
 # a nicely formatted list of those items.
