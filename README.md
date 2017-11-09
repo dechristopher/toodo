@@ -19,4 +19,4 @@ td ~/git
 TODO:
 
 - Improve argument parsing
-- Rewrite in go?
+- Rewrite in go
