@@ -30,7 +30,7 @@ GRAYBG="$(echo -en '\033[00;47m')"
 NORMBG="$(echo -en '\033[00;49m')"
 
 # Check for install command
-if [ -n "$1" ] && [ "$1" == "install" ]; then
+if [ -n "$1" ] && [ "$1" == "--install" ]; then
 	printf "[$GOLD TOODO $RESTORE] Installing..."
 	sudo cp ./toodo.sh /usr/local/bin/td
 	printf "$GREEN Success!$RESTORE\n"
