@@ -37,6 +37,12 @@ if [ -n "$1" ] && [ "$1" == "install" ]; then
 	exit 0
 fi
 
+# Check for install command
+if [ -n "$1" ] && [ "$1" == "--help" ]; then
+	printf "[$GOLD TOODO $RESTORE] Usage: td <dir> <file extension regex>\n"
+	exit 0
+fi
+
 # Set directory to search [ASSUMES '.']
 DIR=$1
 if [ -z "$DIR" ]; then
