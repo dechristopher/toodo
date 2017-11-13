@@ -66,7 +66,7 @@ header ()
 	fmt='%-'
 	fmt+=$cols
 	fmt+='s'
-	printf $fmt "$GRAYBG$BLACK  TOODO v0.2 - [DIR: $DIR] [FILES: $TYPES]$NORMAL"
+	printf $fmt "$GRAYBG$BLACK  TOODO v0.2 - [DIR: $DIR] [EXT: $TYPES]$NORMAL"
 	printf "$NORMBG\n"
 }
 
