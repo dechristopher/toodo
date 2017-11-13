@@ -18,5 +18,6 @@ td ~/git
 
 TODO:
 
+- Fix flicker on redraw
 - Improve argument parsing
 - Rewrite in go
