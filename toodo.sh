@@ -16,7 +16,7 @@
 # Install: ./toodo.sh install
 #
 # Usage: td
-# Usage: td <dir> <file extension>
+# Usage: td <dir> <file extension regex>
 #
 # td . *.go (searches local directory in .go files)
 
